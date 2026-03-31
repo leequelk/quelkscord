@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>꿹스코드 아카이브</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --panel: #171a22;
+      --line: #2b3040;
+      --text: #e8ecf1;
+      --muted: #9aa4b2;
+      --accent: #7aa2ff;
+      --accent2: #8b5cf6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top, rgba(122,162,255,0.14), transparent 35%),
+        linear-gradient(180deg, #0f1117 0%, #0b0d12 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: rgba(23,26,34,0.94);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 32px 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      text-align: center;
+    }
+
+    .title {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: block;
+      text-decoration: none;
+      color: var(--text);
+      background: #141923;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px 18px;
+      transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #1b2130;
+      border-color: #44506b;
+    }
+
+    .button.primary {
+      box-shadow: inset 0 0 0 1px rgba(122,162,255,0.18);
+    }
+
+    .button.secondary {
+      box-shadow: inset 0 0 0 1px rgba(139,92,246,0.16);
+    }
+
+    .button-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .button-desc {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      .title {
+        font-size: 28px;
+      }
+
+      .button-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">꿹스코드 아카이브</h1>
+    <div class="subtitle">
+      해킹으로 사라진 채널 기록을 남겨둔 보관 페이지입니다.<br>
+      2024년 서버 첫 4개월간 대화 내역, 또는 2025년의 서버 통계를 볼 수 있습니다.
+    </div>
+
+    <div class="button-grid">
+      <a class="button primary" href="./archive.html">
+        <div class="button-title">대화 내역 보기</div>
+        <div class="button-desc">
+          2024년 채팅 기록을 읽을 수 있습니다.
+        </div>
+      </a>
+
+      <a class="button secondary" href="./archive2.html">
+        <div class="button-title">꿹스코드 전체 통계 보기</div>
+        <div class="button-desc">
+          2025년 서버 활동 통계와 분석 결과를 볼 수 있습니다.
+        </div>
+      </a>
+    </div>
+
+    <div class="footer">
+      서버 간수 똑바로 못해서 죄송함다
+    </div>
+  </main>
+</body>
+</html>
